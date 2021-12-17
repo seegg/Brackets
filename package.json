@@ -23,6 +23,11 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
+    "bable-loader": "^0.0.1-security",
     "nodemon": "^2.0.15",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.4",

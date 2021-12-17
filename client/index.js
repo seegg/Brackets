@@ -1,3 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('app').appendChild(document.createElement('div').innerHTML('Hello World'));
+  const element = document.createElement('div');
+  element.innerHTML = "HELLO WORLD!";
+  document.getElementById('app').appendChild(element);
 })
+
+console.log('Hello world');
