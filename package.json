@@ -9,6 +9,14 @@
     "start": "node server",
     "dev": "nodemon server"
   },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ],
+    "plugins": []
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/seegg/Brackets.git"
@@ -27,7 +35,7 @@
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
     "@babel/preset-typescript": "^7.16.5",
-    "bable-loader": "^0.0.1-security",
+    "babel-loader": "^8.2.3",
     "nodemon": "^2.0.15",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.4",

@@ -1,7 +1,8 @@
+import hello from './hello';
+
 document.addEventListener('DOMContentLoaded', () => {
-  const element = document.createElement('div');
-  element.innerHTML = "HELLO WORLD!";
-  document.getElementById('app').appendChild(element);
+  const helloBob = hello('Bob');
+  document.getElementById('app').appendChild(helloBob);
 })
 
 console.log('Hello world');
