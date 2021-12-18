@@ -1,0 +1,13 @@
+{
+  "include": [
+    "./client/**/*"
+  ],
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "preserve",
+    "lib": [
+      "DOM",
+      "ES2016"
+    ]
+  }
+}
