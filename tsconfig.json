@@ -5,9 +5,10 @@
   "compilerOptions": {
     "strict": true,
     "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
     "lib": [
       "DOM",
-      "ES2016"
-    ]
+      "ES2020"
+    ],
   }
 }
