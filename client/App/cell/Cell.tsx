@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 interface AppProps {
@@ -11,6 +11,7 @@ const Cell = ({ id, name, image }: AppProps): JSX.Element => {
   return (
     <>
       <div>
+        <img src={image} alt="" />
         <h5>{name}</h5>
       </div>
     </>

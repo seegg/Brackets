@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Bob",
+      "img": "spongebob.webp"
+    },
+    {
+      "id": "2",
+      "name": "Happy",
+      "img": "smileface.webp"
+    },
+    {
+      "id": "3",
+      "name": "Grumpy",
+      "img": "grumpy.webp"
+    },
+    {
+      "id": "4",
+      "name": "Yuan",
+      "img": "me.jpeg"
+    },
+    {
+      "id": "Pepper",
+      "name": "Bob",
+      "img": "pepper.png"
+    }
+  ]
+}
