@@ -1,4 +1,5 @@
 import React from 'react'
+import Cell from './Cell/Cell'
 
 interface AppProps {
   name: String

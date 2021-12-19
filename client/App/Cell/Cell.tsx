@@ -8,5 +8,13 @@ interface AppProps {
 }
 
 const Cell = ({ id, name, image }: AppProps): JSX.Element => {
-  return <></>
+  return (
+    <>
+      <div>
+        <h5>{name}</h5>
+      </div>
+    </>
+  )
 }
+
+export default Cell
