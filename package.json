@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/seegg/Brackets#readme",
   "dependencies": {
+    "@types/superagent": "^4.1.13",
     "express": "^4.17.1"
   },
   "devDependencies": {
