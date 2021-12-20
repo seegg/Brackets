@@ -12,10 +12,8 @@ html {
   .cell{
     padding: 0.1rem;
     display: flex;
-    min-width: 0;
     width: 15rem;
     height: 3rem;
-    overflow: hidden;
     background-color: bisque;
     border-radius: 0.5rem;
     border-style: solid;
@@ -30,17 +28,16 @@ html {
   }
 
   .cell-name{
-    min-width: 0;
-    overflow: hidden;
-    margin-left: 0.5rem;
-    padding-right: 0.5rem;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+    min-width: 0;
   }
 
   .name{
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
   }
