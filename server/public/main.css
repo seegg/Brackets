@@ -1,0 +1,35 @@
+:root{
+  
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+  
+  .cell{
+    padding: 0.5rem;
+    display: flex;
+    width: 20rem;
+    height: 5rem;
+    background-color: bisque;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(91, 84, 134);
+  }
+
+  .cell-img{
+    border-radius: 50%;
+    border-width: 2rem;
+    border-color: black;
+  }
+
+  .cell-name{
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
