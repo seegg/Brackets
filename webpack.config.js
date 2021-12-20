@@ -22,13 +22,7 @@ module.exports = {
     ]
   },
   resolve: {
-<<<<<<< HEAD
-    extensions: ['.js', '.jsx', '.ts', '.tsx']
-||||||| 4323a59
-    extensions: ['.js', '.jsx']
-=======
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json']
->>>>>>> cell
   },
   devtool: 'source-map'
 }
