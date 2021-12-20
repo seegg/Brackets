@@ -1,5 +1,5 @@
 import React from 'react'
-import Cell from './Cell/Cell'
+import Cell from './cell/Cell';
 
 interface AppProps {
   name: String
@@ -10,7 +10,7 @@ const App = ({ name }: AppProps): JSX.Element => {
   return (
     <>
       <div>
-        {`Hello ${name}!`}
+        <Cell id={1} />
       </div>
     </>
   )
