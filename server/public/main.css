@@ -1,5 +1,6 @@
 :root{
-  
+  --cell-bg: bisque;
+  --cell-border-colour:rgb(91, 84, 134);
 }
 
 html {
@@ -14,17 +15,16 @@ html {
     display: flex;
     width: 15rem;
     height: 3rem;
-    background-color: bisque;
+    background-color: var(--cell-bg);
     border-radius: 0.5rem;
     border-style: solid;
     border-width: 3px;
-    border-color: rgb(91, 84, 134);
+    border-color: var(--cell-bg);
   }
 
   .cell-img{
     border-radius: 50%;
     border-width: 2rem;
-    border-color: black;
   }
 
   .cell-name{
