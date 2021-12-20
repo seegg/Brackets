@@ -30,7 +30,7 @@ const Cell = ({ id }: AppProps): JSX.Element => {
       <div className='cell'>
         {user && <img src={`/images/${user?.img}`} alt="profile image" className='cell-img' />}
         <div className='cell-name'>
-          <h3 >{user?.name}</h3>
+          <div className='name-wrap'><h3 >{user?.name}</h3></div>
         </div>
       </div>
     </>
