@@ -10,10 +10,10 @@ html {
 }
   
   .cell{
-    padding: 0.5rem;
+    padding: 0.1rem;
     display: flex;
-    width: 20rem;
-    height: 5rem;
+    width: 15rem;
+    height: 3rem;
     background-color: bisque;
     border-radius: 0.5rem;
     border-style: solid;
@@ -30,6 +30,11 @@ html {
   .cell-name{
     margin-left: 0.5rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    flex-shrink: 1;
+    justify-content: center;
+  }
+
+  .name{
+    height: 1rem;
   }
