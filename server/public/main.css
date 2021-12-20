@@ -1,3 +1,7 @@
+:root{
+  
+}
+
 html {
   box-sizing: border-box;
 }
@@ -11,6 +15,10 @@ html {
     width: 20rem;
     height: 5rem;
     background-color: bisque;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(91, 84, 134);
   }
 
   .cell-img{

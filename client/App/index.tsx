@@ -10,7 +10,7 @@ const App = ({ name }: AppProps): JSX.Element => {
   return (
     <>
       <div>
-        <Cell id={1} />
+        <Cell id={3} />
       </div>
     </>
   )

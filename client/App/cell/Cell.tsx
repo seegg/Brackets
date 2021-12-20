@@ -16,16 +16,19 @@ const Cell = ({ id }: AppProps): JSX.Element => {
 
   const [user, setUser] = useState<User | null>(null);
   useEffect(() => {
-    getCellInfo(1)
+    getCellInfo(id)
       .then(res => {
         setUser(res[0]);
+      })
+      .catch(err => {
+        console.log(err);
       })
   }, [user?.id])
 
   return (
     <>
       <div className='cell'>
-        <img src={`/images/${user?.img}`} alt="profile image" className='cell-img' />
+        {user && <img src={`/images/${user?.img}`} alt="profile image" className='cell-img' />}
         <div className='cell-name'>
           <h3>{user?.name}</h3>
         </div>
