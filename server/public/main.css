@@ -1,7 +1,7 @@
 :root{
   --cell-bg: bisque;
   --cell-border-colour:rgb(91, 84, 134);
-  --arrow-radius: 0rem;
+  --arrow-radius: 0.3rem;
 }
 
 html {
@@ -16,16 +16,16 @@ html {
     display: flex;
     width: 15rem;
     height: 3rem;
-    background-color: var(--cell-bg);
     border-radius: 0.5rem;
     border-style: solid;
     border-width: 3px;
-    border-color: var(--cell-bg);
+    border-color: var(--cell-border-colour);
   }
 
   .cell-img{
     border-radius: 50%;
     border-width: 2rem;
+    margin-right: 0.5rem;
   }
 
   .cell-name{
