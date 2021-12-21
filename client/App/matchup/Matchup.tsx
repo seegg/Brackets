@@ -1,12 +1,12 @@
-import React from 'react'
-import Cell from '../cell/Cell'
+import React from 'react';
+import Cell from '../cell/Cell';
 
 interface Props {
   isTop: boolean,
   id1: number,
   id2: number | null,
   winner: number | null;
-}
+};
 
 const Matchup = ({ isTop, id1, id2, winner }: Props): JSX.Element => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Matchup from './Matchup/Matchup'
+import Matchup from './matchup/Matchup'
 
 interface AppProps {
   name: String
