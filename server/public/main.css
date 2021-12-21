@@ -15,6 +15,7 @@ html {
     padding: 0.1rem;
     display: flex;
     width: 15rem;
+    min-width: 10rem;
     height: 3rem;
     border-radius: 0.5rem;
     border-style: solid;

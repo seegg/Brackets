@@ -1,7 +1,10 @@
 import React from 'react';
-import { Match } from '../../types';
+import { MatchRound } from '../../types';
 
-const Round = (): JSX.Element => {
+
+
+const Round = ({ id, matches }: MatchRound): JSX.Element => {
+
   return <></>;
 };
 
