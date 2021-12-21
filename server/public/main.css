@@ -41,3 +41,12 @@ html {
     font-weight: bold;
     white-space: nowrap;
   }
+
+  .mathchup{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .matchup-gap{
+    height: 0.5rem;
+  }

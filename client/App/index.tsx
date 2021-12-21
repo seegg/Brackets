@@ -1,5 +1,5 @@
 import React from 'react'
-import Cell from './cell/Cell';
+import Matchup from './Matchup/Matchup'
 
 interface AppProps {
   name: String
@@ -10,8 +10,7 @@ const App = ({ name }: AppProps): JSX.Element => {
   return (
     <>
       <div>
-        <Cell id={4} />
-        <Cell id={1} />
+        <Matchup id1={1} id2={2} winner={null} />
       </div>
     </>
   )
