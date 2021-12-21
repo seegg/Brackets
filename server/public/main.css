@@ -1,6 +1,7 @@
 :root{
   --cell-bg: bisque;
   --cell-border-colour:rgb(91, 84, 134);
+  --arrow-radius: 0rem;
 }
 
 html {
@@ -49,9 +50,6 @@ html {
 
   .matchup-gap{
     height: 0.5rem;
-    background-color: aqua;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
   }
 
   .arrow-container{
@@ -61,14 +59,14 @@ html {
   .arrow{
     width: 1.5rem;
     height: 2.25rem;
-    border: solid 2px black;
+    border: solid 3px black;
     border-left: none;
   }
 
   .arrow-top{
     margin-top: 1rem;
     border-bottom: none;
-    border-top-right-radius: 0.25rem;
+    border-top-right-radius: var(--arrow-radius);
   }
 
 
@@ -76,24 +74,24 @@ html {
   .arrow-bottom{
     margin-bottom: 1rem;
     border-top: none;
-    border-bottom-right-radius: 0.25rem;
+    border-bottom-right-radius: var(--arrow-radius);
   }
 
   .matchup-arrow{
     width: 1rem;
     height: 3.25rem;
-    border: solid 2px black;
+    border: solid 3px black;
     border-left: none;
   }
 
   .matchup-top{
     margin-top: 3.25rem;
     border-bottom: none;
-    border-top-right-radius: 0.25rem;
+    border-top-right-radius: var(--arrow-radius);
   }
 
   .matchup-bottom{
     margin-bottom: 3.25rem;
     border-top: none;
-    border-bottom-right-radius: 0.25rem;
+    border-bottom-right-radius: var(--arrow-radius);
   }

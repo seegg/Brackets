@@ -2,12 +2,13 @@ import React from 'react'
 import Cell from '../cell/Cell'
 
 interface Props {
+  isTop: boolean,
   id1: number,
   id2: number | null,
   winner: number | null;
 }
 
-const Matchup = ({ id1, id2, winner }: Props): JSX.Element => {
+const Matchup = ({ isTop, id1, id2, winner }: Props): JSX.Element => {
   return (
     <>
       <div className='matchup'>
@@ -21,7 +22,7 @@ const Matchup = ({ id1, id2, winner }: Props): JSX.Element => {
             <div className='arrow arrow-top'></div>
             <div className='arrow arrow-bottom'></div>
           </div>
-          <div className='matchup-arrow matchup-top'></div>
+          <div className={`matchup-arrow matchup-${isTop ? 'top' : 'bottom'}`}></div>
         </div>
       </div>
     </>

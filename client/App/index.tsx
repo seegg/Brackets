@@ -10,7 +10,7 @@ const App = ({ name }: AppProps): JSX.Element => {
   return (
     <>
       <div>
-        <Matchup id1={1} id2={2} winner={null} />
+        <Matchup isTop={true} id1={1} id2={2} winner={null} />
       </div>
     </>
   )
