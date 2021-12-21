@@ -26,7 +26,7 @@ const Matchup = ({ isTop, id1, id2, winner }: Props): JSX.Element => {
         </div>
       </div>
     </>
-  )
+  );
 };
 
 export default Matchup;
