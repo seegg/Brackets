@@ -17,8 +17,11 @@ const Matchup = ({ id1, id2, winner }: Props): JSX.Element => {
           <Cell id={id2} />
         </div>
         <div className='arrow-container'>
-          <div className='arrow-top'></div>
-          <div className='arrow-bottom'></div>
+          <div className='cell-arrow'>
+            <div className='arrow arrow-top'></div>
+            <div className='arrow arrow-bottom'></div>
+          </div>
+          <div className='matchup-arrow matchup-top'></div>
         </div>
       </div>
     </>

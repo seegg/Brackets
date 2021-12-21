@@ -56,25 +56,44 @@ html {
 
   .arrow-container{
     display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 
-  .arrow-top{
+  .arrow{
     width: 1.5rem;
     height: 2.25rem;
     border: solid 2px black;
     border-left: none;
+  }
+
+  .arrow-top{
+    margin-top: 1rem;
     border-bottom: none;
     border-top-right-radius: 0.25rem;
   }
 
+
+
   .arrow-bottom{
-    width: 1.5rem;
-    height: 2.25rem;
+    margin-bottom: 1rem;
+    border-top: none;
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .matchup-arrow{
+    width: 1rem;
+    height: 3.25rem;
     border: solid 2px black;
     border-left: none;
+  }
+
+  .matchup-top{
+    margin-top: 3.25rem;
+    border-bottom: none;
+    border-top-right-radius: 0.25rem;
+  }
+
+  .matchup-bottom{
+    margin-bottom: 3.25rem;
     border-top: none;
     border-bottom-right-radius: 0.25rem;
   }
