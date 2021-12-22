@@ -17,8 +17,8 @@ const Round = ({ id, matches, roundNo }: MatchRound): JSX.Element => {
         return (
           <div key={idx} id={`round-${id}`}>
             <Matchup {...match} isTop={idx % 2 === 0}
-              topGap={!single && idx != 0}
-              bottomGap={!single && idx < matches.length - 1} />
+              topGap={!single && (idx != 0) && (idx % 2 === 1)}
+              bottomGap={!single && (idx < matches.length - 1) && (idx % 2 === 0)} />
           </div>
         )
       })}
