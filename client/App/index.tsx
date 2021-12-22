@@ -8,6 +8,8 @@ interface AppProps {
 }
 
 const App = ({ name }: AppProps): JSX.Element => {
+
+  //remove when done.
   const round: MatchRound = {
     id: 1,
     round: 1,
