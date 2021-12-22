@@ -13,7 +13,7 @@ interface User {
   img: string
 }
 
-const Cell = ({ id }: AppProps): JSX.Element => {
+const Cell = ({ id, isWinner }: AppProps): JSX.Element => {
 
   const [user, setUser] = useState<User | null>(null);
   useEffect(() => {
@@ -28,7 +28,7 @@ const Cell = ({ id }: AppProps): JSX.Element => {
 
   return (
     <>
-      <div className='cell '>
+      <div className={`cell ${isWinner ? 'loser' : ''}`}>
         {user && <img src={`/images/${user?.img}`} alt="profile image" className='cell-img' />}
         <div className='cell-name'>
           <p className='name'>{user?.name}</p>
