@@ -84,7 +84,6 @@ html {
 
   .matchup-arrow{
     width: 1rem;
-    height: 3.25rem;
     border: solid 3px black;
     border-left: none;
   }
@@ -99,4 +98,8 @@ html {
     margin-bottom: 3.25rem;
     border-top: none;
     border-bottom-right-radius: var(--arrow-radius);
+  }
+
+  .loser{
+    filter: grayscale(50%);
   }

@@ -6,18 +6,19 @@ import Matchup from '../matchup/Matchup';
 const Round = ({ id, matches }: MatchRound): JSX.Element => {
 
   const [round, setRound] = useState<MatchRound | null>(null);
-
+  const single = matches.length === 1;
   useEffect(() => {
-
+    setRound({ id, matches });
   }, [id, ...matches]);
-
 
   return (
     <div>
       {round && round.matches.map((match, idx) => {
         return (
-          <div key={idx}>
-            <Matchup {...match} isTop={idx % 2 === 0} />
+          <div key={idx} id={`round-${id}`}>
+            <Matchup {...match} isTop={idx % 2 === 0}
+              topGap={!single && idx != 0}
+              bottomGap={!single && idx < matches.length - 1} />
           </div>
         )
       })}

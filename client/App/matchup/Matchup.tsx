@@ -3,25 +3,30 @@ import Cell from '../cell/Cell';
 import { Match } from '../../types';
 
 interface Props extends Match {
-  isTop: boolean
-}
+  isTop: boolean,
+  topGap: boolean,
+  bottomGap: boolean,
+};
 
-const Matchup = ({ isTop, id1, id2, winner }: Props): JSX.Element => {
+const Matchup = ({ id1, id2, winner, isTop, topGap, bottomGap }: Props): JSX.Element => {
+  console.log(topGap);
   return (
     <>
       <div className='matchup'>
         <div>
+          {topGap && <div className='matchup-gap'></div>}
           <Cell id={id1} />
           <div className='matchup-gap'></div>
           <Cell id={id2} />
+          {bottomGap && <div className='matchup-gap'></div>}
         </div>
         <div className='arrow-container'>
           <div className='cell-arrow'>
             <div className='arrow arrow-top'></div>
             <div className='arrow arrow-bottom'></div>
           </div>
-          <div className={`matchup-arrow matchup-${isTop ? 'top' : 'bottom'}`}></div>
         </div>
+        {(topGap || bottomGap) && <div className={`matchup-arrow matchup-${isTop ? 'top' : 'bottom'}`}></div>}
       </div>
     </>
   );
