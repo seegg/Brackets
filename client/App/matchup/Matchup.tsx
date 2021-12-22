@@ -15,9 +15,9 @@ const Matchup = ({ id1, id2, winner, isTop, topGap, bottomGap }: Props): JSX.Ele
       <div className='matchup'>
         <div>
           {topGap && <div className='matchup-gap'></div>}
-          <Cell id={id1} />
+          <Cell id={id1} isWinner={id1 === winner} />
           <div className='matchup-gap'></div>
-          <Cell id={id2} />
+          <Cell id={id2} isWinner={id2 === winner} />
           {bottomGap && <div className='matchup-gap'></div>}
         </div>
         <div className='arrow-container'>

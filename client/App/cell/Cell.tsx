@@ -4,6 +4,7 @@ import { getCellInfo } from '../../apis/cell';
 
 interface AppProps {
   id: number | null,
+  isWinner: boolean | null
 }
 
 interface User {
@@ -27,7 +28,7 @@ const Cell = ({ id }: AppProps): JSX.Element => {
 
   return (
     <>
-      <div className='cell'>
+      <div className='cell '>
         {user && <img src={`/images/${user?.img}`} alt="profile image" className='cell-img' />}
         <div className='cell-name'>
           <p className='name'>{user?.name}</p>
