@@ -1,7 +1,8 @@
 :root{
-  --cell-bg: bisque;
+  --cell-bg: rgb(188, 225, 247);
   --cell-border-colour:rgb(91, 84, 134);
   --arrow-radius: 0.3rem;
+  --arrow-thickness: 2px;
 }
 
 html {
@@ -64,7 +65,7 @@ html {
   .arrow{
     width: 1.5rem;
     height: 2.25rem;
-    border: solid 3px black;
+    border: solid var(--arrow-thickness) black;
     border-left: none;
   }
 
@@ -84,7 +85,7 @@ html {
 
   .matchup-arrow{
     width: 1rem;
-    border: solid 3px black;
+    border: solid var(--arrow-thickness) black;
     border-left: none;
   }
 
@@ -101,5 +102,5 @@ html {
   }
 
   .loser{
-    filter: grayscale(70%);
+    filter: grayscale(90%);
   }
