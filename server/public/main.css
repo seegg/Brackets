@@ -104,3 +104,11 @@ html {
   .loser{
     filter: grayscale(90%);
   }
+
+  .round-gap{
+    height: 1rem;
+  }
+
+  .filler-gap{
+    height: 5.5rem;
+  }
