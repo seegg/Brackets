@@ -1,5 +1,5 @@
 interface Match {
-  id1: number,
+  id1: number | null,
   id2: number | null,
   winner: number | null,
 };
