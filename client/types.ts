@@ -6,7 +6,7 @@ interface Match {
 
 interface MatchRound {
   id: number,
-  round: number,
+  roundNo: number,
   matches: Match[],
 }
 

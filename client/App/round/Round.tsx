@@ -3,12 +3,12 @@ import { MatchRound } from '../../types';
 import Matchup from '../matchup/Matchup';
 
 
-const Round = ({ id, matches }: MatchRound): JSX.Element => {
+const Round = ({ id, matches, roundNo }: MatchRound): JSX.Element => {
 
   const [round, setRound] = useState<MatchRound | null>(null);
   const single = matches.length === 1;
   useEffect(() => {
-    setRound({ id, matches });
+    setRound({ id, matches, roundNo });
   }, [id, ...matches]);
 
   return (

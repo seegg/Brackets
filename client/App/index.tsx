@@ -12,7 +12,7 @@ const App = ({ name }: AppProps): JSX.Element => {
   //remove when done.
   const round: MatchRound = {
     id: 1,
-    round: 1,
+    roundNo: 1,
     matches: [
       { id1: 1, id2: 2, winner: 1 },
       { id1: 3, id2: 4, winner: null },
