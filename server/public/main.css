@@ -112,3 +112,15 @@ html {
   .filler-gap{
     height: 0.5rem;
   }
+
+  .round{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .match-round{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }

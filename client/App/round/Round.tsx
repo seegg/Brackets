@@ -12,10 +12,10 @@ const Round = ({ id, matches, roundNo }: MatchRound): JSX.Element => {
   }, [id, ...matches]);
 
   return (
-    <div id={`round-${id}`}>
+    <div id={`round-${id}`} className='round'>
       {round && round.matches.map((match, idx) => {
         return (
-          <div key={idx}>
+          <div key={idx} className='match-round'>
             <Matchup {...match} isTop={idx % 2 === 0}
               topGap={!single && (idx != 0) && (idx % 2 === 1)}
               bottomGap={!single && (idx < matches.length - 1) && (idx % 2 === 0)} />

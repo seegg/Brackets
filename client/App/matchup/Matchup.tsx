@@ -40,8 +40,6 @@ const Matchup = ({ id1, id2, winner, isTop, topGap, bottomGap }: Props): JSX.Ele
             {(!isTop && bottomGap) && <div className='filler-gap bottom-gap'></div>}
           </div>
         </div>
-
-
       </div>
     </>
   );
