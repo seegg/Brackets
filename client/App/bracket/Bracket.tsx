@@ -5,3 +5,5 @@ const Bracket = (): JSX.Element => {
 
   return <></>
 }
+
+export default Bracket;

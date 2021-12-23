@@ -13,7 +13,6 @@ interface MatchRound {
 interface MatchBracket {
   id: number,
   rounds: MatchRound[],
-
 }
 
 export { Match, MatchRound, MatchBracket }

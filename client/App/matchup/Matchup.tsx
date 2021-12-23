@@ -32,6 +32,8 @@ const Matchup = ({ id1, id2, winner, isTop, topGap, bottomGap }: Props): JSX.Ele
                   </div>
                 </div>
               </div>
+              {/* Decide whether the gap should extend to the end or just behind 
+              the outer arrow by on the position of the matchup. */}
               {(isTop && bottomGap) && <div className='filler-gap bottom-gap'></div>}
             </div>
             {(topGap || bottomGap) && <div className={`matchup-arrow matchup-${isTop ? 'top' : 'bottom'}`}></div>}
