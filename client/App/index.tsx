@@ -11,7 +11,7 @@ interface AppProps {
 const App = ({ name }: AppProps): JSX.Element => {
 
   //remove when done.
-  const round: MatchRound = {
+  const round1: MatchRound = {
     id: 1,
     roundNo: 1,
     matches: [
@@ -21,14 +21,24 @@ const App = ({ name }: AppProps): JSX.Element => {
       { id1: 3, id2: 4, winner: null },
       { id1: 1, id2: 2, winner: 1 },
       { id1: 3, id2: 4, winner: null },
-      { id1: 1, id2: 2, winner: null },
-      { id1: 3, id2: 4, winner: 4 },
+      { id1: 1, id2: 2, winner: 2 },
+      { id1: 3, id2: 4, winner: null },
+    ]
+  }
+  const round2: MatchRound = {
+    id: 1,
+    roundNo: 1,
+    matches: [
+      { id1: 1, id2: 3, winner: null },
+      { id1: 2, id2: 4, winner: 2 },
+      { id1: 2, id2: 3, winner: null },
+      { id1: 1, id2: 4, winner: null },
     ]
   }
 
   const match: MatchBracket = {
     id: 1,
-    rounds: [round, round, round]
+    rounds: [round1, round2]
   }
   return (
     <>

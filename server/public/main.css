@@ -124,3 +124,7 @@ html {
     flex-direction: column;
     width: fit-content;
   }
+
+  .bracket{
+    display: flex;
+  }

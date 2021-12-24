@@ -9,7 +9,7 @@ const cellRoutes = require('./routes/cells');
 server.use(express.json());
 server.use(express.static(path.join(__dirname, 'public')));
 
-server.use('/', randomDelay(100, 1000));
+server.use('/', randomDelay(100, 2000));
 
 server.use("/home", (req, res) => {
   res.send("hello");

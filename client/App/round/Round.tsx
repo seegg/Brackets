@@ -7,6 +7,11 @@ const Round = ({ id, matches, roundNo }: MatchRound): JSX.Element => {
 
   const [round, setRound] = useState<MatchRound | null>(null);
   const single = matches.length === 1;
+
+  const gapHeight = {
+    height: '2rem',
+  }
+
   useEffect(() => {
     setRound({ id, matches, roundNo });
   }, [id, ...matches]);
@@ -19,7 +24,7 @@ const Round = ({ id, matches, roundNo }: MatchRound): JSX.Element => {
             <Matchup {...match} isTop={idx % 2 === 0}
               topGap={!single && (idx != 0) && (idx % 2 === 1)}
               bottomGap={!single && (idx < matches.length - 1) && (idx % 2 === 0)} />
-            {idx % 2 === 1 && <div className='round-gap'></div>}
+            {idx % 2 === 1 && <div style={gapHeight}></div>}
           </div>
         )
       })}
