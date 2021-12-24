@@ -28,12 +28,12 @@ const App = ({ name }: AppProps): JSX.Element => {
 
   const match: MatchBracket = {
     id: 1,
-    rounds: [round]
+    rounds: [round, round, round]
   }
   return (
     <>
       <div>
-        <Round {...round} />
+        <Bracket {...match} />
       </div>
     </>
   )
