@@ -9,16 +9,17 @@ interface Props extends Match {
 };
 
 const Matchup = ({ id1, id2, winner, isTop, topGap, bottomGap }: Props): JSX.Element => {
+
   return (
     <>
       <div className='matchup'>
         <div>
           <div>
-            {(isTop && topGap) && <div className='filler-gap top-gap'></div>}
+            {(isTop && topGap) && <div className='filler-gap'></div>}
           </div>
           <div className='matchup'>
             <div >
-              {(!isTop && topGap) && <div className='filler-gap top-gap'></div>}
+              {(!isTop && topGap) && <div className='filler-gap'></div>}
               <div className='matchup'>
                 <div>
                   <Cell id={id1} isWinner={id1 === winner} />
@@ -34,12 +35,12 @@ const Matchup = ({ id1, id2, winner, isTop, topGap, bottomGap }: Props): JSX.Ele
               </div>
               {/* Decide whether the gap should extend to the end or just behind 
               the outer arrow by on the position of the matchup. */}
-              {(isTop && bottomGap) && <div className='filler-gap bottom-gap'></div>}
+              {(isTop && bottomGap) && <div className='filler-gap'></div>}
             </div>
             {(topGap || bottomGap) && <div className={`matchup-arrow matchup-${isTop ? 'top' : 'bottom'}`}></div>}
           </div>
           <div>
-            {(!isTop && bottomGap) && <div className='filler-gap bottom-gap'></div>}
+            {(!isTop && bottomGap) && <div className='filler-gap'></div>}
           </div>
         </div>
       </div>

@@ -8,9 +8,11 @@ const Round = ({ id, matches, roundNo }: MatchRound): JSX.Element => {
   const [round, setRound] = useState<MatchRound | null>(null);
   const single = matches.length === 1;
 
-  const gapHeight = {
-    height: '2rem',
+  let gapHeight = {
+    height: `${(roundNo) * 2}rem`,
   }
+
+  console.log('gap height', gapHeight.height);
 
   useEffect(() => {
     setRound({ id, matches, roundNo });

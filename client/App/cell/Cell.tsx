@@ -24,11 +24,11 @@ const Cell = ({ id, isWinner }: AppProps): JSX.Element => {
       .catch(err => {
         console.log(err);
       })
-  }, [user?.id])
+  }, [user?.img])
 
   return (
     <div className={`cell ${isWinner ? 'loser' : ''}`}>
-      <img src={`/images/${user?.img}`} alt="profile image" className='cell-img' />
+      {user?.img && <img src={`/images/${user.img}`} alt="profile image" className='cell-img' />}
       <div className='cell-name'>
         <p className='name'>{user?.name}</p>
       </div>

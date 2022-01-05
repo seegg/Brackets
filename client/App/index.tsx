@@ -1,6 +1,7 @@
 import React from 'react'
 import Matchup from './matchup/Matchup'
 import Round from './round/Round';
+import Cell from './cell/Cell';
 import Bracket from './bracket/Bracket'
 import { MatchRound, MatchBracket } from '../types';
 
@@ -27,7 +28,7 @@ const App = ({ name }: AppProps): JSX.Element => {
   }
   const round2: MatchRound = {
     id: 1,
-    roundNo: 1,
+    roundNo: 2,
     matches: [
       { id1: 1, id2: 3, winner: null },
       { id1: 2, id2: 4, winner: 2 },
