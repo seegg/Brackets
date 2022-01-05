@@ -12,7 +12,9 @@ const Round = ({ id, matches, roundNo }: MatchRound): JSX.Element => {
     height: `${(roundNo) * 2}rem`,
   }
 
-  console.log('gap height', gapHeight.height);
+  let topGapHeight = {
+    height: `${(roundNo - 1) * 3.75}rem`,
+  }
 
   useEffect(() => {
     setRound({ id, matches, roundNo });
@@ -20,6 +22,7 @@ const Round = ({ id, matches, roundNo }: MatchRound): JSX.Element => {
 
   return (
     <div id={`round-${id}`} className='round'>
+      <div style={topGapHeight}></div>
       {round && round.matches.map((match, idx) => {
         return (
           <div key={idx} className='match-round'>

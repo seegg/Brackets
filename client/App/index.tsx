@@ -27,8 +27,19 @@ const App = ({ name }: AppProps): JSX.Element => {
     ]
   }
   const round2: MatchRound = {
-    id: 1,
+    id: 2,
     roundNo: 2,
+    matches: [
+      { id1: 1, id2: 3, winner: null },
+      { id1: 2, id2: 4, winner: 2 },
+      { id1: 2, id2: 3, winner: null },
+      { id1: 1, id2: 4, winner: null },
+    ]
+  }
+
+  const round3: MatchRound = {
+    id: 3,
+    roundNo: 3,
     matches: [
       { id1: 1, id2: 3, winner: null },
       { id1: 2, id2: 4, winner: 2 },
@@ -39,7 +50,7 @@ const App = ({ name }: AppProps): JSX.Element => {
 
   const match: MatchBracket = {
     id: 1,
-    rounds: [round1, round2]
+    rounds: [round1, round2, round3]
   }
   return (
     <>
